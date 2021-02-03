@@ -6,7 +6,7 @@
   "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
   "extraAttributes": {
     "_AbstractCityObject": {
-      "+geometry-external-file": {
+      "+pointcloud-file": {
         "properties": {
           "mimeType": {
             "type": "string",

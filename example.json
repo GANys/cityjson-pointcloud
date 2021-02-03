@@ -1,0 +1,60 @@
+{
+  "type": "CityJSON",
+  "version": "1.0",
+  "extensions": {
+    "CityJSON_PointCloud": {
+      "url": "https://github.com/ganys/cityjson-pointcloud",
+      "version": "0.1"
+    }
+  },
+  "CityObjects": {
+    "House_1": {
+      "type": "Building",
+      "attributes": {
+        "roofType": "gable"
+      },
+      "geographicalExtent": [84710.1, 446846.0, -5.3, 84757.1, 446944.0, 40.9],
+      "children": ["Roof_1"],
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "lod": 2,
+          "boundaries": [
+            [[0, 3, 2, 1, 4]],
+            [[4, 5, 6, 666, 12]],
+            [[0, 1, 5]],
+            [[20, 21, 75]]
+          ]
+        }
+      ]
+    },
+    "Roof_1": {
+      "type": "BuildingPart",
+      "geographicalExtent": [84710.1, 446846.0, -5.3, 84757.1, 446944.0, 40.9],
+      "parents": ["House_1"],
+      "geometry": [
+        {
+          "type": "MultiPoint",
+          "lod": 2,
+          "boundaries": [
+            [[0, 3, 2, 1, 4]],
+            [[4, 5, 6, 666, 12]],
+            [[0, 1, 5]],
+            [[20, 21, 75]]
+          ]
+        }
+      ]
+    },
+    "Tree_1": {
+      "type": "SolitaryVegetationObject",
+      "geographicalExtent": [84710.1, 446846.0, -5.3, 84757.1, 446944.0, 40.9],
+      "geometry": [null],
+      "pointcloud-file": {
+        "mimeType": ["application/vnd.las"],
+        "pointFile": "URI to GitHub file",
+        "pointFileSrsName": "EPSG:4326"
+      }
+    }
+  },
+  "vertices": []
+}
