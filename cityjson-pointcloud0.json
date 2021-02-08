@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "$id": "pointcloud.schema.json",
+  "name": "CityJSON 3D Point Cloud Extension",
+  "uri": "https://github.com/ganys/cityjson-pointcloud",
+  "version": "0.1",
+  "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
+  "extraAttributes": {
+    "_AbstractCityObject": {
+      "+pointcloud-file": {
+        "properties": {
+          "mimeType": {
+            "type": "string",
+            "enum": ["application/vnd.las"]
+          },
+          "pointFile": {
+            "type": "string",
+            "format": "uri-reference"
+          },
+          "pointFileSrsName": {
+            "type": "string",
+            "default": "EPSG:4326"
+          }
+        }
+      }
+    },
+    "_AbstractBuilding": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "$ref": "../geomptrimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "_AbstractTunnel": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "_AbstractBridge": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "_AbstractTransportationComplex": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "TINRelief": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "WaterBody": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "PlantCover": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    },
+    "LandUse": {
+      "geometry": {
+        "type": "array",
+        "items": {
+          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+        }
+      }
+    }
+  },
+  "extraRootProperties": {},
+  "extraCityObjects": {}
+}
