@@ -2,13 +2,14 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "$id": "pointcloud.schema.json",
-  "name": "CityJSON 3D Point Cloud Extension",
+  "name": "pointcloud",
   "uri": "https://github.com/ganys/cityjson-pointcloud",
   "version": "0.1",
   "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
   "extraAttributes": {
     "_AbstractCityObject": {
       "+pointcloud-file": {
+        "type": "object",
         "properties": {
           "mimeType": {
             "type": "string",
@@ -29,7 +30,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "$ref": "../geomptrimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "../geomptrimitives.schema.json#/MultiPoint" }]
         }
       }
     },

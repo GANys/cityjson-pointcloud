@@ -34,9 +34,7 @@
     "properties": {
       "type": { "enum": ["Solid"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -121,9 +119,7 @@
     "properties": {
       "type": { "enum": ["MultiSolid"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -221,9 +217,7 @@
     "properties": {
       "type": { "enum": ["CompositeSolid"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -321,9 +315,7 @@
     "properties": {
       "type": { "enum": ["MultiSurface"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -397,9 +389,7 @@
     "properties": {
       "type": { "enum": ["CompositeSurface"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -477,9 +467,7 @@
     "properties": {
       "type": { "enum": ["MultiLineString"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
         "type": "array",
@@ -499,9 +487,7 @@
     "properties": {
       "type": { "enum": ["MultiPoint"] },
       "lod": {
-        "type": "number",
-        "minimum": 0.0,
-        "maximum": 3.5
+        "type": "string"
       },
       "boundaries": {
          "type": "array",

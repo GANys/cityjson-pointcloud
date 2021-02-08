@@ -86,7 +86,7 @@
             78,
             79
           ],
-          "lod": 3.0,
+          "lod": "3.0",
           "type": "MultiPoint"
         }
       ],
@@ -108,25 +108,41 @@
               [[85, 84, 86, 87]]
             ]
           ],
-          "lod": 1.0,
-          "semantics": { "surfaces": [null], "values": [null] },
+          "lod": "1.0",
           "type": "Solid"
         }
       ],
       "type": "Building"
     },
     "97acbe72-f825-41e1-a432-98efeee99cd3": {
-      "attributes": {"species": 1160},
-      "geometry": [ null ],
+      "attributes": {},
+      "geometry": [
+        {
+          "type": "MultiPoint",
+          "lod":"3.0",
+          "boundaries": []
+        }
+      ],
       "type": "SolitaryVegetationObject",
       "pointcloud-file": {
         "mimeType": "application/vnd.las",
-        "pointFile": "https://github.com/GANys/cityjson-pointcloud/blob/dev/Tree.las",
+        "pointFile": "https://github.com/GANys/cityjson-pointcloud/blob/dev/example/Tree.las",
+        "pointFileSrsName": ""
       }
     }
   },
   "type": "CityJSON",
   "version": "1.0",
+  "extensions": {
+    "pointcloud": {
+      "url": "./schemas/extensions/cityjson-pointcloud.json",
+      "version": "0.1"
+    }
+  },
+  "transform": {
+    "scale": [1.0, 1.0, 1.0],
+    "translate": [0.0, 0.0, 0.0]
+  },
   "vertices": [
     [2.99137931, 2.356435725, 2.0],
     [2.827586207, 3.61056112, 2.138462524],
