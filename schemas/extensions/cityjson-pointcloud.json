@@ -3,7 +3,7 @@
   "type": "object",
   "$id": "pointcloud.schema.json",
   "name": "pointcloud",
-  "uri": "https://github.com/ganys/cityjson-pointcloud",
+  "uri": "https://github.com/GANys/cityjson-pointcloud/raw/dev/schemas/extensions/cityjson-pointcloud.json",
   "version": "0.1",
   "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
   "extraAttributes": {

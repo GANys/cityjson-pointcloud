@@ -124,9 +124,10 @@
         }
       ],
       "type": "SolitaryVegetationObject",
+      "geographicalExtent" : [ 4, 2, 0, 5, 3, 4 ],
       "pointcloud-file": {
         "mimeType": "application/vnd.las",
-        "pointFile": "https://github.com/GANys/cityjson-pointcloud/blob/dev/example/Tree.las",
+        "pointFile": "https://github.com/GANys/cityjson-pointcloud/raw/dev/example/Tree.las",
         "pointFileSrsName": ""
       }
     }
@@ -135,7 +136,7 @@
   "version": "1.0",
   "extensions": {
     "pointcloud": {
-      "url": "./schemas/extensions/cityjson-pointcloud.json",
+      "url": "https://github.com/GANys/cityjson-pointcloud/blob/dev/schemas/extensions/cityjson-pointcloud.json",
       "version": "0.1"
     }
   },
