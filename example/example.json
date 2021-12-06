@@ -1,7 +1,6 @@
 {
   "CityObjects": {
     "25749c9a-e242-4f0e-bfb4-c1e28f2211f1": {
-      "attributes": {},
       "geometry": [
         {
           "boundaries": [
@@ -94,7 +93,6 @@
       "type": "BuildingPart"
     },
     "6dac0b5b-7ff9-4f07-8a0c-414f979dde8a": {
-      "attributes": {},
       "children": ["25749c9a-e242-4f0e-bfb4-c1e28f2211f1"],
       "geometry": [
         {
@@ -115,7 +113,6 @@
       "type": "Building"
     },
     "97acbe72-f825-41e1-a432-98efeee99cd3": {
-      "attributes": {},
       "geometry": [
         {
           "type": "MultiPoint",

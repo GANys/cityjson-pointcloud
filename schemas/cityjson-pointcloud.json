@@ -30,7 +30,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "+oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
