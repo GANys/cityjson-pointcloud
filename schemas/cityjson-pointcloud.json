@@ -1,10 +1,10 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "object",
+  "type": "CityJSONExtension",
   "$id": "pointcloud.schema.json",
   "name": "pointcloud",
   "uri": "https://github.com/GANys/cityjson-pointcloud/raw/dev/schemas/extensions/cityjson-pointcloud.json",
-  "version": "0.1",
+  "version": "0.2",
+  "versionCityJSON": "1.1",
   "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
   "extraAttributes": {
     "_AbstractCityObject": {
@@ -13,7 +13,7 @@
         "properties": {
           "mimeType": {
             "type": "string",
-            "enum": ["application/vnd.las"]
+            "enum": ["application/vnd.las", "application/octet-stream"]
           },
           "pointFile": {
             "type": "string",
@@ -30,7 +30,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomptrimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomptrimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -38,7 +38,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -46,7 +46,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -54,7 +54,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -62,7 +62,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -70,7 +70,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -78,7 +78,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
@@ -86,7 +86,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "../geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     }

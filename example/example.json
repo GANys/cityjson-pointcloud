@@ -133,11 +133,11 @@
     }
   },
   "type": "CityJSON",
-  "version": "1.0",
+  "version": "1.1",
   "extensions": {
     "pointcloud": {
-      "url": "https://github.com/GANys/cityjson-pointcloud/blob/dev/schemas/extensions/cityjson-pointcloud.json",
-      "version": "0.1"
+      "url": "https://raw.githubusercontent.com/GANys/cityjson-pointcloud/dev/schemas/cityjson-pointcloud.json",
+      "version": "0.2"
     }
   },
   "transform": {
