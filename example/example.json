@@ -119,12 +119,12 @@
       "geometry": [
         {
           "type": "MultiPoint",
-          "lod":"3.0",
+          "lod": "3.0",
           "boundaries": []
         }
       ],
       "type": "SolitaryVegetationObject",
-      "geographicalExtent" : [ 4, 2, 0, 5, 3, 4 ],
+      "geographicalExtent": [4, 2, 0, 5, 3, 4],
       "pointcloud-file": {
         "mimeType": "application/vnd.las",
         "pointFile": "https://github.com/GANys/cityjson-pointcloud/raw/dev/example/Tree.las",

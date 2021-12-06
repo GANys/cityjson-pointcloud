@@ -14,7 +14,7 @@ const metadataSchema = require("./schemas/metadata.schema.json");
 
 const pointcloudSchema = require("./schemas/cityjson-pointcloud.json");
 
-console.warn("Some KeyWords are not valid in strict JSON Schemas : ")
+console.warn("Some Keywords are not valid in strict JSON Schemas : ")
 const ajv = new Ajv({ strict: "log" });
 addFormats(ajv); // Some formats are not recognised by default
 
