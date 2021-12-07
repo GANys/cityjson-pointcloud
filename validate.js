@@ -12,7 +12,7 @@ const geomprimitivesSchema = require("./schemas/geomprimitives.schema.json");
 const geomtemplatesSchema = require("./schemas/geomtemplates.schema.json");
 const metadataSchema = require("./schemas/metadata.schema.json");
 
-const pointcloudSchema = require("./schemas/cityjson-pointcloud.json");
+const pointcloudSchema = require("./schemas/cityjson-pointcloud.ext.json");
 
 console.warn("Some Keywords are not valid in strict JSON Schemas : ")
 const ajv = new Ajv({ strict: "log" });
@@ -34,7 +34,6 @@ if (validate) {
   console.error(validate.errors);
 }
 
-/*
 const readStream = fs.createReadStream("./example/example.json");
 const parseStream = json.createParseStream();
 
@@ -49,4 +48,3 @@ parseStream.on("data", function (pojo) {
 });
 
 readStream.pipe(parseStream);
-*/

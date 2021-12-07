@@ -1,11 +1,11 @@
 {
-  "type": "CityJSONExtension",
+  "type": "object",
   "$id": "pointcloud.schema.json",
   "name": "pointcloud",
-  "uri": "https://github.com/GANys/cityjson-pointcloud/raw/dev/schemas/extensions/cityjson-pointcloud.json",
+  "uri": "https://raw.githubusercontent.com/GANys/cityjson-pointcloud/dev/schemas/cityjson-pointcloud.ext.json",
   "version": "0.2",
   "versionCityJSON": "1.1",
-  "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.0.1",
+  "description": "Extension to support point cloud for CityObjects geometries. Works with CityJSON 1.1.0",
   "extraAttributes": {
     "_AbstractCityObject": {
       "+pointcloud-file": {
@@ -19,9 +19,9 @@
             "type": "string",
             "format": "uri-reference"
           },
-          "pointFileSrsName": {
+          "referenceSystem": {
             "type": "string",
-            "default": "EPSG:4326"
+            "pattern": "^(http|https)://www.opengis.net/def/crs/"
           }
         }
       }
@@ -30,7 +30,7 @@
       "geometry": {
         "type": "array",
         "items": {
-          "+oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
