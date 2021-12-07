@@ -34,7 +34,7 @@ if (validate) {
   console.error(validate.errors);
 }
 
-const readStream = fs.createReadStream("./example/example.json");
+const readStream = fs.createReadStream("./example/example.city.json");
 const parseStream = json.createParseStream();
 
 parseStream.on("data", function (pojo) {

@@ -86,7 +86,7 @@
             79
           ],
           "lod": "3.0",
-          "type": "MultiPoint"
+          "type": "+MultiPoint"
         }
       ],
       "parents": ["6dac0b5b-7ff9-4f07-8a0c-414f979dde8a"],
@@ -115,14 +115,14 @@
     "97acbe72-f825-41e1-a432-98efeee99cd3": {
       "geometry": [
         {
-          "type": "MultiPoint",
+          "type": "+MultiPoint",
           "lod": "3.0",
           "boundaries": []
         }
       ],
       "type": "SolitaryVegetationObject",
       "geographicalExtent": [4, 2, 0, 5, 3, 4],
-      "pointcloud-file": {
+      "+pointcloud-file": {
         "mimeType": "application/vnd.las",
         "pointFile": "https://github.com/GANys/cityjson-pointcloud/raw/dev/example/Tree.las",
         "referenceSystem": "https)://www.opengis.net/def/crs/"
