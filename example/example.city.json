@@ -119,7 +119,7 @@
       "+pointcloud-file": {
         "mimeType": "application/vnd.las",
         "pointFile": "https://github.com/GANys/cityjson-pointcloud/raw/dev/example/Tree.las",
-        "referenceSystem": "https)://www.opengis.net/def/crs/4326"
+        "referenceSystem": "https://www.opengis.net/def/crs/4326"
       }
     }
   },
