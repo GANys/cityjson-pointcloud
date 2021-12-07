@@ -1,6 +1,5 @@
 {
   "type": "CityJSONExtension",
-  "$id": "pointcloud.schema.json",
   "name": "pointcloud",
   "uri": "https://raw.githubusercontent.com/GANys/cityjson-pointcloud/dev/schemas/cityjson-pointcloud.ext.json",
   "version": "0.2",
@@ -27,66 +26,66 @@
       }
     },
     "_AbstractBuilding": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "_AbstractTunnel": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "_AbstractBridge": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "_AbstractTransportationComplex": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "TINRelief": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "WaterBody": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "PlantCover": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     },
     "LandUse": {
-      "geometry": {
+      "+geometry": {
         "type": "array",
         "items": {
-          "oneOf": [{ "+$ref": "geomprimitives.schema.json#/MultiPoint" }]
+          "oneOf": [{ "$ref": "geomprimitives.schema.json#/MultiPoint" }]
         }
       }
     }

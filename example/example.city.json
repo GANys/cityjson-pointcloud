@@ -1,7 +1,7 @@
 {
   "CityObjects": {
     "25749c9a-e242-4f0e-bfb4-c1e28f2211f1": {
-      "geometry": [
+      "+geometry": [
         {
           "boundaries": [
             0,
@@ -86,7 +86,7 @@
             79
           ],
           "lod": "3.0",
-          "type": "+MultiPoint"
+          "type": "MultiPoint"
         }
       ],
       "parents": ["6dac0b5b-7ff9-4f07-8a0c-414f979dde8a"],
@@ -113,19 +113,13 @@
       "type": "Building"
     },
     "97acbe72-f825-41e1-a432-98efeee99cd3": {
-      "geometry": [
-        {
-          "type": "+MultiPoint",
-          "lod": "3.0",
-          "boundaries": []
-        }
-      ],
+      "geometry": [],
       "type": "SolitaryVegetationObject",
       "geographicalExtent": [4, 2, 0, 5, 3, 4],
       "+pointcloud-file": {
         "mimeType": "application/vnd.las",
         "pointFile": "https://github.com/GANys/cityjson-pointcloud/raw/dev/example/Tree.las",
-        "referenceSystem": "https)://www.opengis.net/def/crs/"
+        "referenceSystem": "https)://www.opengis.net/def/crs/4326"
       }
     }
   },
